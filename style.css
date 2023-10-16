@@ -110,15 +110,15 @@ a:hover {
 }
 
 .menu-links li {
-    list-style: none;
+    list-style: no ne;
 }
 
 .menu-links.open{
     max-height: 300px;
 }
 
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, 5px);
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
 
 }
 
@@ -141,3 +141,7 @@ a:hover {
 .hamburger-icon span:first-child{
     transform: none;
 }
+
+
+/* SECTIONS */
+
