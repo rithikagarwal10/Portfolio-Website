@@ -7,11 +7,65 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 150px;
+    scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
+#desktop-nav {
+  position: fixed; /* Fixes navigation at the top of the viewport */
+  top: 0; /* Aligns at the top */
+  left: 0; /* Aligns to the left edge */
+  width: 100%; /* Spans the full width */
+  background: black; /* Sets a white background for visibility */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  height: 50px;
+}
+
+#desktop-nav .logo {
+  padding: 10px 20px; /* Padding around the logo for spacing */
+  font-size: 24px; /* Larger font size for visibility */
+  font-weight: bold; /* Makes the text bold */
+  color: white;
+  float: left; /* Aligns the logo to the left */
+}
+
+#desktop-nav .nav-link {
+  list-style-type: none; /* Removes list styling */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Displays links in a row */
+  justify-content: space-around; /* Distributes space around links */
+  align-items: center; /* Vertically aligns links */
+  height: 30px; /* Fixed height for the navigation bar */
+}
+
+#desktop-nav .nav-link li {
+  display: inline; /* Displays the list items inline */
+}
+
+#desktop-nav .nav-link li a {
+  display: block;
+  padding: 20px 15px; /* Padding for clickable area */
+  text-decoration: none; /* No underline */
+  color: white; /* Text color */
+  font-size: 16px; /* Sets the font size */
+  text-transform: uppercase; /* Optional: transforms text to uppercase */
+}
+
+#desktop-nav .nav-link li a:hover {
+  background-color: #f8f8f8; /* Changes background on hover */
+  color: #505050; /* Changes text color on hover */
+}
+
 
 p{
     color: rgb(85,85,85)
@@ -37,6 +91,21 @@ nav {
     height: 17vh;
 }
 
+.top-nav{
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5 rem;
+}
+
+.footer-nav{
+  display: flex;
+  gap: 1rem; /* Adjust the gap as needed */
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+
+}
+
 .nav-link {
     gap: 2rem;
     list-style: none;
@@ -51,7 +120,6 @@ a {
 
 a:hover {
     color:  grey;
-    text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb (181,181,181);
 }  
@@ -145,7 +213,8 @@ a:hover {
 
 /* SECTIONS */
 section {
-    padding-top: 4vh;
+    padding-top: 100px;
+    margin-top: -100px;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -419,9 +488,14 @@ section {
   /* FOOTER SECTION */
   
   footer {
-    height: 26vh;
-    margin: 0 1rem;
+    display: flex; /* This makes the footer a flex container */
+    align-items: center; /* This vertically centers the items in the footer */
+    justify-content: space-around; /* This spreads the items evenly with space around them */
+    height: auto; /* Adjust height as needed */
+    padding: 20px; /* Provides padding inside the footer */
+    background-color: #f1f1f1; /* Adds some padding on the sides */
   }
+
   
   footer p {
     text-align: center;
