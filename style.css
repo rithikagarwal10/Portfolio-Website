@@ -27,7 +27,7 @@ html {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
   transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
   z-index: 1000; /* Ensures it stays on top of other content */
-  height: 50px;
+  height: 85px;
 }
 
 #desktop-nav .logo {
@@ -131,7 +131,7 @@ a:hover {
 /* hamburger=menu */
 
 #hamburger-nav{
-    display: none;
+    display: flex;
 }
 
 .hamburger-menu{
@@ -160,7 +160,6 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0%;
-    background-color: white;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -169,7 +168,7 @@ a:hover {
 
 .menu-links a{
     display: block;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
     font-size: 1.5rem;
     color: black;
@@ -178,7 +177,7 @@ a:hover {
 }
 
 .menu-links li {
-    list-style: no ne;
+    list-style: circle;
 }
 
 .menu-links.open{
