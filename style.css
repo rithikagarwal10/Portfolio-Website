@@ -177,7 +177,7 @@ a:hover {
 }
 
 .menu-links li {
-    list-style: circle;
+    list-style: none;
 }
 
 .menu-links.open{
